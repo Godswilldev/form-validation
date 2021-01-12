@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Form Validation with JavaScript</title>
+</head>
+
+<body class="body">
+  <section class="content">
+    <section class="intro">
+      <h1 class="intro_heading heading_primary">Learn to code by watching others</h1>
+      <p class="paragraph intro__paragraph"> See how experienced developers solve problems in real-time. Watching
+        scripted
+        tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </section>
+
+    <section class="register">
+
+      <button class="btn btn_primary"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
+
+      <form>
+        <div class="form-control">
+          <input type="text" name="firstname" id="firstname" placeholder="First name">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <input type="email" name="email" id="email" placeholder="Email address">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <input type="password" name="password" id="password" placeholder="Password">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <input type="password" name="password2" id="password2" placeholder="Re-Enter Password">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <button class="btn btn_secondary" type="submit">Claim your free trial</button>
+        <p>By clicking the button, you are agreeing to our <strong>Terms and Services</strong></p>
+      </form>
+    </section>
+  </section>
+  <script src="Js/app.js"></script>
+</body>
+
+</html>

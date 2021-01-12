@@ -1,0 +1,18 @@
+.btn {
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem 5rem;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: .2rem .5rem 1rem rgba(0, 0, 0, 0.5);
+
+    &_primary {
+        background-color: $color-blue;
+    }
+
+    &_secondary {
+        background-color: $color-green;
+    }
+}
