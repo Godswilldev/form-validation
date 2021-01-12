@@ -39,7 +39,7 @@ body {
   color: #3e52a3; }
 
 .body {
-  background-image: linear-gradient(to right, rgba(255, 122, 122, 0.8), rgba(255, 122, 122, 0.8)), url(../images/bg-intro-desktop.png);
+  background-image: linear-gradient(to right, rgba(255, 122, 122, 0.6), rgba(255, 122, 122, 0.6)), url(../images/bg-intro-desktop.png);
   color: #fff; }
 
 .heading_primary {
@@ -55,29 +55,100 @@ body {
 .btn {
   border: none;
   outline: none;
-  cursor: pointer;
-  padding: 1rem 5rem;
+  padding: 1.5rem;
   color: #ffffff;
   border-radius: 5px;
-  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem; }
   .btn_primary {
-    background-color: #6055a5; }
+    background-color: #6055a5;
+    width: 50rem;
+    margin: 2rem 0; }
   .btn_secondary {
-    background-color: #38cc8c; }
+    background-color: #38cc8c;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s all;
+    display: block;
+    width: 92%;
+    text-align: center;
+    margin: 0 auto; }
+    .btn_secondary:focus {
+      box-shadow: 0.3rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5); }
+
+.form {
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  color: #b9b6d3;
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  padding: 1.5rem; }
+  .form-control {
+    position: relative;
+    margin: 2rem;
+    padding-bottom: 2rem; }
+    .form-control input {
+      border: 2px solid #b9b6d3;
+      border-radius: 5px;
+      display: block;
+      width: 100%;
+      padding: 1.5rem;
+      font-size: 1.7rem;
+      outline: none; }
+      .form-control input::placeholder {
+        color: #b9b6d3; }
+    .form-control .exclamation {
+      position: absolute;
+      right: 1rem;
+      top: 2.2rem;
+      font-size: 1.5rem;
+      visibility: hidden; }
+    .form-control .circle {
+      position: absolute;
+      right: 1rem;
+      top: 2.2rem;
+      font-size: 1.5rem;
+      visibility: hidden; }
+    .form-control small {
+      position: absolute;
+      right: 1rem;
+      bottom: 0;
+      font-size: 1.5rem;
+      visibility: hidden; }
+  .form-footer {
+    margin-top: 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600; }
+    .form-footer strong {
+      color: #ff7a7a; }
+
+.success input {
+  border-color: #38cc8c; }
+
+.success .circle {
+  color: #38cc8c;
+  visibility: visible; }
+
+.error input {
+  border-color: #ff7a7a; }
+
+.error .exclamation {
+  color: #ff7a7a;
+  visibility: visible; }
+
+.error small {
+  color: #ff7a7a;
+  visibility: visible; }
 
 .content {
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin: 0 10rem; }
 
 .intro {
-  margin: 0 15rem;
-  width: 50%; }
-
-.register {
-  margin: 0 10rem;
-  width: 50%; }
+  padding-right: 15rem; }
 
 /*!
  * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
@@ -4655,8 +4726,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("../sass/webfonts/fa-solid-900.eot");
-  src: url("../sass/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../sass/webfonts/fa-solid-900.woff2") format("woff2"), url("../sass/webfonts/fa-solid-900.woff") format("woff"), url("../sass/webfonts/fa-solid-900.ttf") format("truetype"), url("../sass/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("../css/webfonts/fa-solid-900.eot");
+  src: url("../css/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../css/webfonts/fa-solid-900.woff2") format("woff2"), url("../css/webfonts/fa-solid-900.woff") format("woff"), url("../css/webfonts/fa-solid-900.ttf") format("truetype"), url("../css/webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
 
 .fa,
 .fas {

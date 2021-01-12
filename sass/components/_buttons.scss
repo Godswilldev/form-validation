@@ -1,18 +1,30 @@
 .btn {
-
     border: none;
     outline: none;
-    cursor: pointer;
-    padding: 1rem 5rem;
+    padding: 1.5rem;
     color: #ffffff;
     border-radius: 5px;
-    box-shadow: .2rem .5rem 1rem rgba(0, 0, 0, 0.5);
+    box-shadow: .2rem .5rem .5rem rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
 
     &_primary {
         background-color: $color-blue;
+        width: 50rem;
+        margin: 2rem 0;
     }
 
     &_secondary {
         background-color: $color-green;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: .2s all;
+        display: block;
+        width: 92%;
+        text-align: center;
+        margin: 0 auto;
+
+        &:focus {
+            box-shadow: .3rem .1rem .2rem rgba(0, 0, 0, 0.5);
+        }
     }
 }

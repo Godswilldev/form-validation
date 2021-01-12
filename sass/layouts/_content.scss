@@ -1,17 +1,11 @@
-.content{
-    // padding: 0 15rem;
-    height: 100vh;
+.content {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 10rem;
 }
 
-.intro{
-    margin:0 15rem;
-    width: 50%;
-}
-
-.register{
-    margin:0 10rem;
-    width: 50%;
+.intro {
+    padding-right:15rem;
 }

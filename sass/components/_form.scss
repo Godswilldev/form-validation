@@ -1,0 +1,89 @@
+.form {
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    color: $color-Grayish-blue;
+    box-shadow: .2rem .5rem .5rem rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+
+    &-control {
+        position: relative;
+        margin: 2rem;
+        padding-bottom: 2rem;
+
+        input {
+            border: 2px solid $color-Grayish-blue;
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+            padding: 1.5rem;
+            font-size: 1.7rem;
+            outline: none;
+
+            &::placeholder {
+                color: $color-Grayish-blue;
+            }
+        }
+
+        .exclamation {
+            position: absolute;
+            right: 1rem;
+            top: 2.2rem;
+            font-size: 1.5rem;
+            visibility: hidden;
+        }
+
+        .circle {
+            position: absolute;
+            right: 1rem;
+            top: 2.2rem;
+            font-size: 1.5rem;
+            visibility: hidden;
+        }
+
+        small {
+            position: absolute;
+            right: 1rem;
+            bottom: 0;
+            font-size: 1.5rem;
+            visibility: hidden;
+        }
+    }
+
+    &-footer {
+        margin-top: 2.5rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+
+        strong {
+            color: $color-red;
+        }
+    }
+}
+
+.success {
+    input {
+        border-color: $color-green;
+    }
+
+    .circle {
+        color: $color-green;
+        visibility: visible;
+    }
+}
+
+.error {
+    input {
+        border-color: $color-red;
+    }
+
+    .exclamation {
+        color: $color-red;
+        visibility: visible;
+    }
+
+    small {
+        color: $color-red;
+        visibility: visible;
+    }
+}
