@@ -11,6 +11,13 @@
         background-color: $color-blue;
         width: 50rem;
         margin: 2rem 0;
+
+        @include respond(phone) {
+            padding: 4rem;
+            font-size: 3rem;
+            line-height: 1.5;
+            margin-bottom: 4rem;
+        }
     }
 
     &_secondary {
@@ -25,6 +32,10 @@
 
         &:focus {
             box-shadow: .3rem .1rem .2rem rgba(0, 0, 0, 0.5);
+        }
+
+        &:hover {
+            background-color: lighten($color-green, $amount: 20);
         }
     }
 }

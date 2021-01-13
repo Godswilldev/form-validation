@@ -7,16 +7,14 @@ let password2 = document.querySelector('#password2')
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
-    checkInputs()
+    checkInputs();
 })
-let smalltext = document.querySelectorAll('.small')
 
 
 function addErrorMsg(input, message) {
     let formControl = input.parentElement;
-    for (const small of smalltext) {
-        smalltext.innerText = message;
-    }
+    let smalltext = formControl.querySelector('small')
+    smalltext.innerHTML = message
     formControl.classList.remove('success')
     formControl.classList.add('error');
 }
@@ -46,7 +44,7 @@ function checkInputs() {
     };
 
     if (email.value.trim() === '') {
-        addErrorMsg(email, 'Looks like this is not a valid email')
+        addErrorMsg(email, 'Email field cannot be empty')
     }
     else if (!validateEmail(email.value.trim())) {
         addErrorMsg(email, 'Looks like this is not a valid email')

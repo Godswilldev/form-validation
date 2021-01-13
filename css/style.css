@@ -16,6 +16,23 @@
   By clicking the button, you are agreeing to our Terms and Services
 
 */
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 *,
 *::before,
 *::after {
@@ -26,6 +43,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -64,6 +84,12 @@ body {
     background-color: #6055a5;
     width: 50rem;
     margin: 2rem 0; }
+    @media only screen and (max-width: 37.5em) {
+      .btn_primary {
+        padding: 4rem;
+        font-size: 3rem;
+        line-height: 1.5;
+        margin-bottom: 4rem; } }
   .btn_secondary {
     background-color: #38cc8c;
     text-transform: uppercase;
@@ -75,6 +101,8 @@ body {
     margin: 0 auto; }
     .btn_secondary:focus {
       box-shadow: 0.3rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5); }
+    .btn_secondary:hover {
+      background-color: #89e1bb; }
 
 .form {
   background-color: #fff;
@@ -146,9 +174,21 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: 0 10rem; }
+  @media only screen and (max-width: 37.5em) {
+    .content {
+      flex-direction: column;
+      margin: 10rem 5rem; } }
 
 .intro {
   padding-right: 15rem; }
+  @media only screen and (max-width: 37.5em) {
+    .intro {
+      padding: 0;
+      text-align: center;
+      margin-bottom: 5rem; }
+      .intro p {
+        font-size: 2rem;
+        line-height: 1.5; } }
 
 /*!
  * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
